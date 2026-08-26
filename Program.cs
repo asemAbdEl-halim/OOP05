@@ -80,6 +80,29 @@
 
             #endregion
 
+            #region Question04
+
+            /*
+             * 4) Extension Methods
+             * a) What is an Extension Method?
+             * => Anser <==
+             * ==> An Extension Method is a method that allows us to add a new method to an existing class without changing the original class.
+             * 
+             * b) What keyword must be used in the first parameter of an extension method?
+             * ==> Anser <==
+             * ==> The "this" keyword must be used in the first parameter of an extension method.
+             * 
+             * c) Where must an extension method be declared?
+             * ==> Anser <==
+             * ==> It must be inside a static class.
+             * 
+             * d) Can an extension method access private members of the class it extends?
+             * ==> Anser <==
+             * ==> No. It cannot directly access private members of the class because it is not actually a member of that class.
+             * **/
+
+            #endregion
+
 
 
             #endregion
