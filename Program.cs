@@ -54,6 +54,34 @@
 
             #endregion
 
+            #region Question03
+
+            /*
+             * 3) Static Members
+             * a) What is a static field, and how is it different from an instance field?
+             * ==> Anser <==
+             * ==> A static field belongs to the class itself, not to each object. There is only one copy shared by all objects.
+             * An instance field has a separate copy for each object.
+             * 
+             * b) What is a static method? Can a static method directly access instance members?
+             * => Anser <==
+             * ==> A static method belongs to the class and can be called without creating an object.
+             * A static method cannot directly access instance members because instance members belong to an object.
+             * 
+             * c) What is a static constructor, and when is it executed?
+             * => Anser <==
+             * ==> A static constructor is used to initialize static members.
+             * It runs automatically once, before the class is used for the first time.
+             * 
+             * d) What is a static class? Can you create an object from a static class?
+             * A static class is a class that contains only static members.
+             * You cannot create an object from a static class.
+             * **/
+
+            #endregion
+
+
+
             #endregion
         }
     }
