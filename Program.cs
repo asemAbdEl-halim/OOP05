@@ -103,6 +103,29 @@
 
             #endregion
 
+            #region Question05
+
+            /*
+             * 5) Partial Classes and Partial Methods
+             * a) What is a Partial Class?
+             * ==> Anser <==
+             * ==> A Partial Class is a class that can be divided into multiple files, but C# treats them as one class.
+             * 
+             * b) Why would a developer split one class into multiple files?
+             * ==> Anser <==
+             * ==> To make the code more organized and easier to manage, especially when the class is very large.
+             * 
+             * c) What is a Partial Method?
+             * ==> Anser <==
+             * ==> A Partial Method is a method that can be declared in one part of a partial class and implemented in another part.
+             * 
+             * d) What happens if a declared partial method has no implementation?
+             * ==> Anser <==
+             * ==> If it is a valid optional partial method, the compiler removes it, so it causes no error and has no effect.
+             * **/
+
+            #endregion
+
 
 
             #endregion
