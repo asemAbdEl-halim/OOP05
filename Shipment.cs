@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace OOP05
 {
-    internal abstract class Shipment
+    internal abstract partial class Shipment
     {
         private string trackingCode;
         private string description;
         private decimal weight;
         private decimal deliveryFee;
         private DeliveryAddress destination;
-        // Static Field
+
         public static int TotalShipmentsCreated = 0;
 
         // Static Constructor
@@ -22,13 +22,6 @@ namespace OOP05
             TotalShipmentsCreated = 0;
             Console.WriteLine("Shipment System Initialized");
         }
-
-        // Static Method
-        public static int GetTotalShipmentsCreated()
-        {
-            return TotalShipmentsCreated;
-        }
-
 
         // Constructor 1
         public Shipment(string trackingCode)
@@ -40,7 +33,6 @@ namespace OOP05
                 new DeliveryAddress("Cairo", "Unknown", 1))
         {
         }
-
 
         // Constructor 2
         public Shipment(
@@ -72,19 +64,16 @@ namespace OOP05
 
             this.destination = destination;
 
-            // Increase counter
             TotalShipmentsCreated++;
         }
 
-
-        // Tracking Code - Read Only
+        // Tracking Code
         public string TrackingCode
         {
             get { return trackingCode; }
         }
 
-
-        // Description - Read / Write
+        // Description
         public string Description
         {
             get { return description; }
@@ -96,8 +85,7 @@ namespace OOP05
             }
         }
 
-
-        // Weight - Read / Write
+        // Weight
         public decimal Weight
         {
             get { return weight; }
@@ -109,8 +97,7 @@ namespace OOP05
             }
         }
 
-
-        // Delivery Fee - Public Getter / Private Setter
+        // Delivery Fee
         public decimal DeliveryFee
         {
             get { return deliveryFee; }
@@ -122,8 +109,7 @@ namespace OOP05
             }
         }
 
-
-        // Destination - Read / Write
+        // Destination
         public DeliveryAddress Destination
         {
             get { return destination; }
@@ -134,14 +120,11 @@ namespace OOP05
             }
         }
 
-
         // Abstract Estimated Cost
         public abstract decimal EstimatedCost { get; }
 
-
         // Abstract Print Shipment
         public abstract void PrintShipment();
-
 
         // Update Delivery Fee
         public void UpdateDeliveryFee(decimal newFee)
@@ -152,7 +135,6 @@ namespace OOP05
             }
         }
 
-
         // Update Weight
         public void UpdateWeight(decimal newWeight)
         {
@@ -161,7 +143,6 @@ namespace OOP05
                 Weight = newWeight;
             }
         }
-
 
         // Update Weight + Packing Weight
         public void UpdateWeight(decimal newWeight, decimal packingWeight)
@@ -172,20 +153,17 @@ namespace OOP05
             }
         }
 
-
         // Copy Shipment
         public Shipment CopyShipment()
         {
             return (Shipment)this.MemberwiseClone();
         }
 
-
         // Shallow Copy
         public Shipment ShallowCopy()
         {
             return (Shipment)this.MemberwiseClone();
         }
-
 
         // Deep Copy
         public Shipment DeepCopy()
@@ -201,7 +179,10 @@ namespace OOP05
             return copy;
         }
 
-        public abstract string GetTrackingStatus();
-
+        // Static Method
+        public static int GetTotalShipmentsCreated()
+        {
+            return TotalShipmentsCreated;
+        }
     }
 }

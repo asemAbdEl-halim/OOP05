@@ -222,6 +222,14 @@
 
             #endregion
 
+            #region Question09
+
+            /*
+             9) Partial Shipment Class
+             */
+
+            #endregion
+
 
 
             #endregion
