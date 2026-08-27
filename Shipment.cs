@@ -13,7 +13,6 @@ namespace OOP05
         private decimal weight;
         private decimal deliveryFee;
         private DeliveryAddress destination;
-
         // Static Field
         public static int TotalShipmentsCreated = 0;
 
@@ -201,5 +200,8 @@ namespace OOP05
 
             return copy;
         }
+
+        public abstract string GetTrackingStatus();
+
     }
 }

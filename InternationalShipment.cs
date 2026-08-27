@@ -75,9 +75,10 @@ namespace OOP05
         }
 
         // Tracking Status
-        public string GetTrackingStatus()
+        public override string GetTrackingStatus()
         {
             return "Shipment " + TrackingCode + " has been Delivered.";
+            throw new NotImplementedException();
         }
 
         // Print Shipment
@@ -92,5 +93,7 @@ namespace OOP05
             Console.WriteLine("Customs Fee         : " + CustomsFee + " EGP");
             Console.WriteLine("Estimated Cost      : " + EstimatedCost + " EGP");
         }
+
+        
     }
 }

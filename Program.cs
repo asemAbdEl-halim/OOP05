@@ -214,6 +214,16 @@
 
             #endregion
 
+            #region Question08
+
+            /*
+             8) Extension Methods
+             */
+
+            #endregion
+
+
+
             #endregion
         }
     }

@@ -36,9 +36,10 @@ namespace OOP05
             return EstimatedCost * 0.05m;
         }
 
-        public string GetTrackingStatus()
+        public override string GetTrackingStatus()
         {
             return "Shipment " + TrackingCode + " is Ready.";
+            throw new NotImplementedException();
         }
 
         public override void PrintShipment()

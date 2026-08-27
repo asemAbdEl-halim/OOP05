@@ -54,10 +54,12 @@ namespace OOP05
             return EstimatedCost * 0.08m;
         }
 
-        public string GetTrackingStatus()
+        public override string GetTrackingStatus()
         {
             return "Shipment " + TrackingCode + " is Out for Delivery.";
+            throw new NotImplementedException();
         }
+        
 
         public override void PrintShipment()
         {
@@ -69,5 +71,6 @@ namespace OOP05
             Console.WriteLine("Extra Fee     : " + ExtraFee + " EGP");
             Console.WriteLine("Estimated Cost: " + EstimatedCost + " EGP");
         }
+
     }
 }
