@@ -126,7 +126,45 @@
 
             #endregion
 
+            #endregion
 
+            #region Part02
+
+            #region Question01
+
+            /*
+             * 1) - Object Copying
+             * => Anser <==
+             * Shipment shipment1 = new StandardShipment(
+                "SH001",
+                "Laptop",
+                3,
+                80,
+                new DeliveryAddress("Cairo", "Tahrir Street", 10)
+            );
+            
+            // Reference Copy
+            Shipment shipment2 = shipment1;
+            
+            shipment2.Description = "Mobile Phone";
+            
+            Console.WriteLine("Reference Copy:");
+            Console.WriteLine("Shipment 1 Description: " + shipment1.Description);
+            Console.WriteLine("Shipment 2 Description: " + shipment2.Description);
+            
+            Console.WriteLine();
+            
+            // Actual Copy
+            Shipment shipment3 = shipment1.CopyShipment();
+            
+            shipment3.Description = "Television";
+            
+            Console.WriteLine("Actual Copy:");
+            Console.WriteLine("Shipment 1 Description: " + shipment1.Description);
+            Console.WriteLine("Shipment 3 Description: " + shipment3.Description);
+             * **/
+
+            #endregion
 
             #endregion
         }
