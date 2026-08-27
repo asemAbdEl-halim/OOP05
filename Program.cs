@@ -182,6 +182,14 @@
 
             #endregion
 
+            #region Question04
+
+            /*
+             4) Static Field
+             */
+
+            #endregion
+
             #endregion
         }
     }

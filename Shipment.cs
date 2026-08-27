@@ -13,6 +13,7 @@ namespace OOP05
         private decimal weight;
         private decimal deliveryFee;
         private DeliveryAddress destination;
+        public static int TotalShipmentsCreated = 0;
 
         // Constructor 1
         public Shipment(string trackingCode)
@@ -27,11 +28,11 @@ namespace OOP05
 
         // Constructor 2
         public Shipment(
-            string trackingCode,
-            string description,
-            decimal weight,
-            decimal deliveryFee,
-            DeliveryAddress destination)
+             string trackingCode,
+             string description,
+             decimal weight,
+             decimal deliveryFee,
+             DeliveryAddress destination)
         {
             if (!string.IsNullOrWhiteSpace(trackingCode))
                 this.trackingCode = trackingCode;
@@ -54,6 +55,9 @@ namespace OOP05
                 this.deliveryFee = 50;
 
             this.destination = destination;
+
+            // Increase counter
+            TotalShipmentsCreated++;
         }
 
         // Tracking Code - Read Only
