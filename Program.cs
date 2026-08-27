@@ -198,6 +198,14 @@
 
             #endregion
 
+            #region Question06
+
+            /*
+             6) Static Method
+             */
+
+            #endregion
+
             #endregion
         }
     }

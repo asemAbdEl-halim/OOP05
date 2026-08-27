@@ -24,6 +24,12 @@ namespace OOP05
             Console.WriteLine("Shipment System Initialized");
         }
 
+        // Static Method
+        public static int GetTotalShipmentsCreated()
+        {
+            return TotalShipmentsCreated;
+        }
+
 
         // Constructor 1
         public Shipment(string trackingCode)
