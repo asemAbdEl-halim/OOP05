@@ -10,6 +10,9 @@ namespace OOP05
     {
         private string trackingStatus = "In Transit";
 
+        // Partial Method Declaration
+        partial void OnTrackingStatusChanged(string newStatus);
+
         // Get Tracking Status
         public virtual string GetTrackingStatus()
         {
@@ -22,6 +25,9 @@ namespace OOP05
             if (!string.IsNullOrWhiteSpace(newStatus))
             {
                 trackingStatus = newStatus;
+
+                // Call Partial Method
+                OnTrackingStatusChanged(newStatus);
             }
         }
     }

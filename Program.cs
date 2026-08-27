@@ -230,6 +230,14 @@
 
             #endregion
 
+            #region Question10
+
+            /*
+             10) Partial Method
+             */
+
+            #endregion
+
 
 
             #endregion
