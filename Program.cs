@@ -166,6 +166,14 @@
 
             #endregion
 
+            #region Question02
+
+            /*
+             2) Shallow Copy
+             */
+
+            #endregion
+
             #endregion
         }
     }

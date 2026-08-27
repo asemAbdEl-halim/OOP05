@@ -145,7 +145,13 @@ namespace OOP05
         // Copy Shipment
         public Shipment CopyShipment()
         {
-            return this.MemberwiseClone() as Shipment;
+            return (Shipment)this.MemberwiseClone();
+        }
+
+        // Shallow Copy
+        public Shipment ShallowCopy()
+        {
+            return (Shipment)this.MemberwiseClone();
         }
     }
 }

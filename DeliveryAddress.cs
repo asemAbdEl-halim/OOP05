@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP05
 {
-    internal struct DeliveryAddress
+    internal class DeliveryAddress
     {
         public string City;
         public string Street;
