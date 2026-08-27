@@ -206,6 +206,14 @@
 
             #endregion
 
+            #region Question07
+
+            /*
+             7) Static Class
+             */
+
+            #endregion
+
             #endregion
         }
     }
