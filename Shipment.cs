@@ -13,7 +13,17 @@ namespace OOP05
         private decimal weight;
         private decimal deliveryFee;
         private DeliveryAddress destination;
+
+        // Static Field
         public static int TotalShipmentsCreated = 0;
+
+        // Static Constructor
+        static Shipment()
+        {
+            TotalShipmentsCreated = 0;
+            Console.WriteLine("Shipment System Initialized");
+        }
+
 
         // Constructor 1
         public Shipment(string trackingCode)
@@ -26,13 +36,14 @@ namespace OOP05
         {
         }
 
+
         // Constructor 2
         public Shipment(
-             string trackingCode,
-             string description,
-             decimal weight,
-             decimal deliveryFee,
-             DeliveryAddress destination)
+            string trackingCode,
+            string description,
+            decimal weight,
+            decimal deliveryFee,
+            DeliveryAddress destination)
         {
             if (!string.IsNullOrWhiteSpace(trackingCode))
                 this.trackingCode = trackingCode;
@@ -60,11 +71,13 @@ namespace OOP05
             TotalShipmentsCreated++;
         }
 
+
         // Tracking Code - Read Only
         public string TrackingCode
         {
             get { return trackingCode; }
         }
+
 
         // Description - Read / Write
         public string Description
@@ -78,6 +91,7 @@ namespace OOP05
             }
         }
 
+
         // Weight - Read / Write
         public decimal Weight
         {
@@ -89,6 +103,7 @@ namespace OOP05
                     weight = value;
             }
         }
+
 
         // Delivery Fee - Public Getter / Private Setter
         public decimal DeliveryFee
@@ -102,6 +117,7 @@ namespace OOP05
             }
         }
 
+
         // Destination - Read / Write
         public DeliveryAddress Destination
         {
@@ -113,11 +129,14 @@ namespace OOP05
             }
         }
 
+
         // Abstract Estimated Cost
         public abstract decimal EstimatedCost { get; }
 
+
         // Abstract Print Shipment
         public abstract void PrintShipment();
+
 
         // Update Delivery Fee
         public void UpdateDeliveryFee(decimal newFee)
@@ -128,6 +147,7 @@ namespace OOP05
             }
         }
 
+
         // Update Weight
         public void UpdateWeight(decimal newWeight)
         {
@@ -136,6 +156,7 @@ namespace OOP05
                 Weight = newWeight;
             }
         }
+
 
         // Update Weight + Packing Weight
         public void UpdateWeight(decimal newWeight, decimal packingWeight)
@@ -146,11 +167,13 @@ namespace OOP05
             }
         }
 
+
         // Copy Shipment
         public Shipment CopyShipment()
         {
             return (Shipment)this.MemberwiseClone();
         }
+
 
         // Shallow Copy
         public Shipment ShallowCopy()
@@ -158,6 +181,8 @@ namespace OOP05
             return (Shipment)this.MemberwiseClone();
         }
 
+
+        // Deep Copy
         public Shipment DeepCopy()
         {
             Shipment copy = (Shipment)this.MemberwiseClone();

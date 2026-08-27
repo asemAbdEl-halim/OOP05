@@ -190,6 +190,14 @@
 
             #endregion
 
+            #region Question05
+
+            /*
+             5) Static Constructor
+             */
+
+            #endregion
+
             #endregion
         }
     }
